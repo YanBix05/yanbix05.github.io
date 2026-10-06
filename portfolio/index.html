@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>Fean Yan Droz Sehi Bi — BCA Student &amp; Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Fean Yan Droz Sehi Bi, a BCA student at REVA University specializing in software development, data analytics and machine learning. View projects, skills and contact details." />
+  <meta name="author" content="Fean Yan Droz Sehi Bi" />
+  <meta name="theme-color" content="#3A6EA5" />
+
+  <!-- Open Graph tags: control how the site looks when shared on LinkedIn/social media -->
+  <meta property="og:title" content="Fean Yan Droz Sehi Bi — Portfolio" />
+  <meta property="og:description" content="BCA student and aspiring software developer. Projects in Python, data analytics, machine learning and web development." />
+  <meta property="og:type" content="website" />
+
+  <!-- ===== FONTS =====
+       Space Grotesk  -> headings
+       IBM Plex Sans   -> body text
+       IBM Plex Mono   -> tags, dates, skill-level labels (nods to the "code" subject matter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Accessibility: lets keyboard/screen-reader users jump past the nav -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+       Sticky top bar with section links, theme toggle and mobile menu
+  ============================================================= -->
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary">
+      <a href="#top" class="logo">FY<span class="logo-dot">.</span></a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Sun / moon icons swapped by JS based on current theme -->
+        <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================= -->
+    <section id="top" class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I&rsquo;m</p>
+        <h1>Fean Yan Droz Sehi Bi</h1>
+        <p class="subtitle">BCA Student · Aspiring Software Developer · Data &amp; AI Enthusiast</p>
+        <p class="intro">
+          I build practical software, data and machine-learning projects while continuously
+          developing my skills in computer science and information technology.
+        </p>
+
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <!-- Replace assets/resume.pdf with your actual CV file -->
+          <a href="assets/resume.pdf" class="btn btn-outline" download>Download CV</a>
+          <a href="https://github.com/YanBix05/" class="btn btn-icon" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.07.78 2.17v3.22c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/fean-yan-droz-79792417b/" class="btn btn-icon" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Profile image placeholder: swap assets/profile.svg for assets/profile.jpg once you have a photo -->
+        <div class="profile-frame">
+          <img src="assets/Profile.jpg" alt="Portrait placeholder for Fean Yan Droz Sehi Bi" width="280" height="350" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================= -->
+    <section id="about" class="section wrap reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm a Bachelor of Computer Applications (BCA) student at REVA University, Bengaluru,
+          building a foundation across software development, data and artificial intelligence.
+          My interests center on Python, data analytics and machine learning, alongside core
+          programming and database skills gained through coursework and practical projects.
+        </p>
+        <p>
+          I learn best by building — working through real problems with code rather than just
+          studying theory. I'm currently at an intermediate programming level, and I'm focused on
+          turning that foundation into the kind of practical, project-based experience that
+          translates into real software development and data-focused work.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TECHNICAL SKILLS
+    ============================================================= -->
+    <section id="skills" class="section wrap reveal">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-sub">Skill levels are self-assessed and shown as labels, not percentages.</p>
+
+      <div class="skills-grid">
+
+        <div class="card skill-card">
+          <h3>Programming</h3>
+          <ul class="skill-list">
+            <li><span>Python</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>Java</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>C</span><span class="level level-familiar">Familiar</span></li>
+            <li><span>HTML</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>CSS</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>JavaScript</span><span class="level level-learning">Learning</span></li>
+          </ul>
+        </div>
+
+        <div class="card skill-card">
+          <h3>Data &amp; AI</h3>
+          <ul class="skill-list">
+            <li><span>Python</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>Pandas</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>NumPy</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>Scikit-learn</span><span class="level level-learning">Learning</span></li>
+            <li><span>Machine Learning</span><span class="level level-learning">Learning</span></li>
+            <li><span>Data Analysis</span><span class="level level-intermediate">Intermediate</span></li>
+          </ul>
+        </div>
+
+        <div class="card skill-card">
+          <h3>Database</h3>
+          <ul class="skill-list">
+            <li><span>MySQL</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>SQL</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>DBMS</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>RDBMS</span><span class="level level-familiar">Familiar</span></li>
+          </ul>
+        </div>
+
+        <div class="card skill-card">
+          <h3>Other Tools</h3>
+          <ul class="skill-list">
+            <li><span>Git</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>GitHub</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>Linux</span><span class="level level-familiar">Familiar</span></li>
+            <li><span>VS Code</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>Jupyter Notebook</span><span class="level level-intermediate">Intermediate</span></li>
+            <li><span>Spring Boot</span><span class="level level-learning">Learning</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURED PROJECTS
+    ============================================================= -->
+    <section id="projects" class="section wrap reveal">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="card project-card">
+          <h3>Iris Machine Learning Classification</h3>
+          <p>A beginner machine-learning project using the Iris dataset to understand data preprocessing, train-test splitting and classification.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+            <span class="tag">Scikit-learn</span><span class="tag">Jupyter Notebook</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/YanBix05/iris-ml-classification" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Cab Booking Management System</h3>
+          <p>A database management project designed to manage customers, drivers, cabs, bookings, payments and trip records.</p>
+          <div class="tag-row">
+            <span class="tag">SQL</span><span class="tag">DBMS</span><span class="tag">Database Design</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/YanBix05/cab-booking-management-system" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Gas Cylinder Booking &amp; Delivery System</h3>
+          <p>A system design project for managing customers, distributors, domestic/commercial cylinders, bookings and delivery operations.</p>
+          <div class="tag-row">
+            <span class="tag">DBMS</span><span class="tag">SQL</span><span class="tag">DFD</span><span class="tag">System Analysis</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://https://github.com/YanBix05/gas-cylinder-booking-system" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Python Playlist Organizer</h3>
+          <p>A Python application demonstrating lists, dictionaries, functions, classes and basic application logic.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+          </div>
+          <div class="btn-row">
+            <a href="https://github.com/YanBix05/python-playlist-organizer" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CURRENTLY LEARNING (roadmap-style list)
+    ============================================================= -->
+    <section id="learning" class="section wrap reveal">
+      <h2 class="section-title">Currently Learning</h2>
+      <p class="section-sub">Technologies I'm actively building skills in right now.</p>
+
+      <ul class="roadmap">
+        <li><span class="roadmap-dot"></span><div><h4>Machine Learning &amp; Scikit-learn</h4><p>Deepening practical skills beyond beginner classification projects.</p></div></li>
+        <li><span class="roadmap-dot"></span><div><h4>Data Analytics</h4><p>Working with real-world datasets for cleaning, analysis and visualization.</p></div></li>
+        <li><span class="roadmap-dot"></span><div><h4>Python</h4><p>Strengthening core language skills alongside data and ML libraries.</p></div></li>
+        <li><span class="roadmap-dot"></span><div><h4>Java &amp; Spring Boot</h4><p>Learning backend application development fundamentals.</p></div></li>
+        <li><span class="roadmap-dot"></span><div><h4>SQL</h4><p>Practicing database design and query writing through project work.</p></div></li>
+        <li><span class="roadmap-dot"></span><div><h4>Git &amp; GitHub</h4><p>Building better version-control habits across all projects.</p></div></li>
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         EDUCATION (timeline)
+    ============================================================= -->
+    <section id="education" class="section wrap reveal">
+      <h2 class="section-title">Education</h2>
+
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">Current</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-place">REVA University, Bengaluru, India</p>
+          </div>
+        </li>
+        <!--
+          Add earlier qualifications here using the same structure, e.g.:
+          <li class="timeline-item">
+            <div class="timeline-date">20XX &ndash; 20XX</div>
+            <div class="timeline-content">
+              <h3>Qualification name</h3>
+              <p class="timeline-place">School / institution, City</p>
+            </div>
+          </li>
+        -->
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE / ACTIVITIES
+    ============================================================= -->
+    <section id="experience" class="section wrap reveal">
+      <h2 class="section-title">Experience &amp; Activities</h2><br><br><br>
+
+      <div class="card experience-card">
+        <h3>Cultural Secretary</h3>
+        <p class="timeline-place">REVA International Students Association (RISA), REVA University</p>
+        <ul class="bullet-list">
+          <li>Coordinated cultural and student events, managing planning and on-the-day logistics</li>
+          <li>Communicated with international students across the university to encourage participation</li>
+          <li>Collaborated with university departments to organize activities and secure resources</li>
+          <li>Took on a leadership role within the association, helping guide event planning efforts</li>
+        </ul>
+      </div>
+    </section>
+    <section id="experience1" class="section wrap reveal">
+
+      <div class="card experience-card">
+        <h3>General Secretary</h3>
+        <p class="timeline-place">Association des Ivoiriens de Bangalore</p>
+        <ul class="bullet-list">
+          <li> Prepare agendas, schedule meetings, issue timely notices to members, and record, certify, and archive accurate meeting minutes</li>
+          <li>Maintaining official membership lists and contact databases</li>
+          <li>Managing incoming and outgoing correspondence for the association</li>
+          <li>Safekeeping organizational documents, archives, and the group's constitution</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GITHUB SECTION
+    ============================================================= -->
+    <section id="github" class="section wrap reveal">
+      <h2 class="section-title">GitHub</h2>
+      <p class="section-sub">Explore my projects, experiments and learning journey on GitHub.</p>
+
+      <a href="https://github.com/YanBix05/" class="btn btn-primary" target="_blank" rel="noopener">Visit GitHub</a>
+
+      <!-- Repo cards are filled in by js/script.js using the GitHub API.
+           If the API call fails (offline, rate-limited, or USERNAME not yet set),
+           a static fallback message is shown instead so the page never breaks. -->
+      <div id="repoGrid" class="projects-grid repo-grid" aria-live="polite"></div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================= -->
+    <section id="contact" class="section wrap reveal">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">
+      </p>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+          <a href="mailto:yandrozbix@gmail.com" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4Z"/><path d="m22 6-10 7L2 6"/></svg>
+            yandrozbix@gmail.com
+          </a>
+          <a href="https://github.com/YanBix05/" class="contact-link" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.07.78 2.17v3.22c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            github
+          </a>
+          <a href="https://www.linkedin.com/in/fean-yan-droz-79792417b/" class="contact-link" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            linkedin
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-content">
+      <p>&copy; <span id="year"></span> Fean Yan Droz Sehi Bi. Built with HTML, CSS and JavaScript.</p>
+      <div class="footer-icons">
+        <a href="https://github.com/YanBix05/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.07.78 2.17v3.22c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/fean-yan-droz-79792417b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
